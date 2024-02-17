@@ -1,10 +1,11 @@
-package com.example.a5000wordsbookquiz.data.model
+package com.example.a5000wordsbookquiz.data.model.data
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity(tableName = "question")
 data class QuestionData(
-    val id: Int,
+    @PrimaryKey val id: Int,
     val question: String,
     val answer1: String,
     val answer2: String,
